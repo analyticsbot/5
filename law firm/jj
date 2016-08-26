@@ -1,0 +1,1232 @@
+Python 2.7.7 (default, Jun  1 2014, 14:17:13) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>> 
+Getting page ::  0
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(3)
+        ## get file in the initial download folder
+        filename = listdir(INITIAL_DEST_FOLDER)[0]
+                
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page :: 
+ 0
+name 'listdir' is not defined
+>>> 
+KeyboardInterrupt
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(3)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(3)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+list index out of range
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(3)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(3)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+list index out of range
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(5)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(5)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(filename, str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+[Error 2] The system cannot find the file specified
+>>> filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+>>> filename
+'uscl_an_nyvtl.PDF'
+>>> os.rename(INITIAL_DEST_FOLDER + '/' + filename, INITIAL_DEST_FOLDER + '/' +str(count) + '.pdf')
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(5)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(INITIAL_DEST_FOLDER + '/' + filename, INITIAL_DEST_FOLDER + '/' +str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(5)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(INITIAL_DEST_FOLDER + '/' + filename, INITIAL_DEST_FOLDER + '/' +str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+        break
+
+Getting page ::  0
+Getting page ::  1
+Getting page ::  2
+Getting page ::  3
+Getting page ::  4
+Getting page ::  5
+Getting page ::  6
+Getting page ::  7
+Getting page ::  8
+Getting page ::  9
+Getting page ::  10
+Getting page ::  11
+Getting page ::  12
+Getting page ::  13
+Getting page ::  14
+Getting page ::  15
+Getting page ::  16
+Getting page ::  17
+Getting page ::  18
+Getting page ::  19
+Getting page ::  20
+Getting page ::  21
+Getting page ::  22
+Getting page ::  23
+Getting page ::  24
+Getting page ::  25
+Getting page ::  26
+Getting page ::  27
+Getting page ::  28
+Getting page ::  29
+Getting page ::  30
+Getting page ::  31
+Getting page ::  32
+Getting page ::  33
+Getting page ::  34
+Getting page ::  35
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+>>> count
+35
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(5)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(INITIAL_DEST_FOLDER + '/' + filename, INITIAL_DEST_FOLDER + '/' +str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+
+        
+Getting page ::  35
+list index out of range
+Getting page ::  35
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  35
+Getting page ::  36
+Getting page ::  37
+Getting page ::  38
+Getting page ::  39
+Getting page ::  40
+Getting page ::  41
+Getting page ::  42
+Getting page ::  43
+Getting page ::  44
+Getting page ::  45
+Getting page ::  46
+Getting page ::  47
+Getting page ::  48
+Getting page ::  49
+Getting page ::  50
+Getting page ::  51
+Getting page ::  52
+Getting page ::  53
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  53
+Getting page ::  54
+Getting page ::  55
+Getting page ::  56
+Getting page ::  57
+Getting page ::  58
+Getting page ::  59
+Getting page ::  60
+Getting page ::  61
+Getting page ::  62
+Getting page ::  63
+Getting page ::  64
+Getting page ::  65
+Getting page ::  66
+Getting page ::  67
+Getting page ::  68
+Getting page ::  69
+Getting page ::  70
+Getting page ::  71
+Getting page ::  72
+Getting page ::  73
+Getting page ::  74
+[Error 32] The process cannot access the file because it is being used by another process
+Getting page ::  74
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  74
+Getting page ::  75
+Getting page ::  76
+Getting page ::  77
+Getting page ::  78
+Getting page ::  79
+Getting page ::  80
+Getting page ::  81
+Getting page ::  82
+Getting page ::  83
+Getting page ::  84
+Getting page ::  85
+Getting page ::  86
+Getting page ::  87
+Getting page ::  88
+Getting page ::  89
+Getting page ::  90
+Getting page ::  91
+Getting page ::  92
+Getting page ::  93
+Getting page ::  94
+Getting page ::  95
+Getting page ::  96
+[Error 32] The process cannot access the file because it is being used by another process
+Getting page ::  96
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  96
+Getting page ::  97
+Getting page ::  98
+Getting page ::  99
+Getting page ::  100
+Getting page ::  101
+Getting page ::  102
+Getting page ::  103
+Getting page ::  104
+Getting page ::  105
+Getting page ::  106
+Getting page ::  107
+Getting page ::  108
+Getting page ::  109
+Getting page ::  110
+Getting page ::  111
+Getting page ::  112
+Getting page ::  113
+Getting page ::  114
+Getting page ::  115
+Getting page ::  116
+Getting page ::  117
+Getting page ::  118
+Getting page ::  119
+Getting page ::  120
+Getting page ::  121
+Getting page ::  122
+Getting page ::  123
+Getting page ::  124
+Getting page ::  125
+Getting page ::  126
+Getting page ::  127
+Getting page ::  128
+Getting page ::  129
+Getting page ::  130
+Getting page ::  131
+Getting page ::  132
+Getting page ::  133
+Getting page ::  134
+Getting page ::  135
+Getting page ::  136
+Getting page ::  137
+Getting page ::  138
+Getting page ::  139
+Getting page ::  140
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  140
+Getting page ::  141
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  141
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  141
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  141
+Getting page ::  142
+Getting page ::  143
+Getting page ::  144
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  144
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  144
+Getting page ::  145
+Getting page ::  146
+Getting page ::  147
+Getting page ::  148
+Getting page ::  149
+Getting page ::  150
+Getting page ::  151
+Getting page ::  152
+Getting page ::  153
+Getting page ::  154
+Getting page ::  155
+Getting page ::  156
+Getting page ::  157
+Getting page ::  158
+Getting page ::  159
+Getting page ::  160
+Getting page ::  161
+Getting page ::  162
+Getting page ::  163
+Getting page ::  164
+Getting page ::  165
+Getting page ::  166
+Getting page ::  167
+Getting page ::  168
+Getting page ::  169
+Getting page ::  170
+Getting page ::  171
+Getting page ::  172
+Getting page ::  173
+Getting page ::  174
+Getting page ::  175
+Getting page ::  176
+Getting page ::  177
+Getting page ::  178
+Getting page ::  179
+[Error 32] The process cannot access the file because it is being used by another process
+Getting page ::  179
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  179
+Getting page ::  180
+Getting page ::  181
+Getting page ::  182
+Getting page ::  183
+Getting page ::  184
+Getting page ::  185
+Getting page ::  186
+Getting page ::  187
+Getting page ::  188
+Getting page ::  189
+Getting page ::  190
+Getting page ::  191
+Getting page ::  192
+Getting page ::  193
+Getting page ::  194
+Getting page ::  195
+Getting page ::  196
+Getting page ::  197
+Getting page ::  198
+Getting page ::  199
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  199
+Getting page ::  200
+Getting page ::  201
+Getting page ::  202
+Getting page ::  203
+Getting page ::  204
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  204
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  204
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  204
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  204
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  204
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  204
+Getting page ::  205
+Getting page ::  206
+Getting page ::  207
+Getting page ::  208
+Getting page ::  209
+Getting page ::  210
+Getting page ::  211
+Getting page ::  212
+Getting page ::  213
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  213
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  213
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  213
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  213
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  213
+Getting page ::  214
+Getting page ::  215
+Getting page ::  216
+Getting page ::  217
+Getting page ::  218
+Getting page ::  219
+Getting page ::  220
+Getting page ::  221
+Getting page ::  222
+Getting page ::  223
+Getting page ::  224
+Getting page ::  225
+Getting page ::  226
+Getting page ::  227
+Getting page ::  228
+Getting page ::  229
+Getting page ::  230
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  230
+Getting page ::  231
+Getting page ::  232
+Getting page ::  233
+Getting page ::  234
+Getting page ::  235
+Getting page ::  236
+Getting page ::  237
+Getting page ::  238
+Getting page ::  239
+Getting page ::  240
+Getting page ::  241
+Getting page ::  242
+Getting page ::  243
+Getting page ::  244
+Getting page ::  245
+Getting page ::  246
+Getting page ::  247
+Getting page ::  248
+Getting page ::  249
+Getting page ::  250
+Getting page ::  251
+Getting page ::  252
+Getting page ::  253
+Getting page ::  254
+Getting page ::  255
+Getting page ::  256
+Getting page ::  257
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  257
+Getting page ::  258
+Getting page ::  259
+Getting page ::  260
+Getting page ::  261
+Getting page ::  262
+Getting page ::  263
+Getting page ::  264
+Getting page ::  265
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  265
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  266
+Getting page ::  267
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  267
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  267
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  267
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  267
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  267
+Getting page ::  268
+Getting page ::  269
+Getting page ::  270
+Getting page ::  271
+Getting page ::  272
+Getting page ::  273
+Getting page ::  274
+Getting page ::  275
+Getting page ::  276
+Getting page ::  277
+Getting page ::  278
+Getting page ::  279
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  279
+Getting page ::  280
+Getting page ::  281
+Getting page ::  282
+Getting page ::  283
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:9587)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12257)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12274)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12279)
+    at DelayedCommand.prototype.execute/< (file:///c:/users/ravish~1/appdata/local/temp/tmpkjufqf/extensions/fxdriver@googlecode.com/components/command-processor.js:12221)
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+list index out of range
+Getting page ::  284
+
+Traceback (most recent call last):
+  File "<pyshell#21>", line 6, in <module>
+    create.click()
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 65, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 402, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 173, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 349, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 380, in _request
+    resp = self._conn.getresponse()
+  File "C:\Python27\lib\httplib.py", line 1067, in getresponse
+    response.begin()
+  File "C:\Python27\lib\httplib.py", line 409, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python27\lib\httplib.py", line 365, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "C:\Python27\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+KeyboardInterrupt
+>>> driver.save_screenshot('abc.jpg')
+
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    driver.save_screenshot('abc.jpg')
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 698, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 717, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 727, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 173, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 349, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python27\lib\site-packages\selenium-2.45.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 379, in _request
+    self._conn.request(method, parsed_url.path, body, headers)
+  File "C:\Python27\lib\httplib.py", line 995, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Python27\lib\httplib.py", line 1023, in _send_request
+    self.putrequest(method, url, **skips)
+  File "C:\Python27\lib\httplib.py", line 886, in putrequest
+    raise CannotSendRequest()
+CannotSendRequest
+>>> driver.get_screenshot_as_file('abc.png')
+True
+>>> while True:
+    try:
+        print 'Getting page :: ', count
+        driver.find_element_by_id('createAndShareButton').click()
+        create = driver.find_element_by_id('createAndShareNextButton')
+        create.click()
+        time.sleep(5)
+        ## get file in the initial download folder
+        filename = os.listdir(INITIAL_DEST_FOLDER)[0]
+
+        ## rename the file to SKU name
+        os.rename(INITIAL_DEST_FOLDER + '/' + filename, INITIAL_DEST_FOLDER + '/' +str(count) + '.pdf')
+
+        shutil.move(INITIAL_DEST_FOLDER + '/' + str(count) + '.pdf', FINAL_DEST_FOLDER + '/')
+
+        nxt = driver.find_element_by_id('nextP1Click')
+        nxt.click()
+        time.sleep(3)
+
+        count +=1
+    except Exception,e:
+        print str(e)
+
+        
+Getting page ::  284
+list index out of range
+Getting page ::  284
+
+Traceback (most recent call last):
+  File "<pyshell#25>", line 7, in <module>
+    time.sleep(5)
+KeyboardInterrupt
+>>> 

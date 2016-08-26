@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a {
+    display: block;
+    height: 20px;
+    width: 10px;
+    border: 1px solid #000;
+}
+</style>
+<title>All Profiles</title>
+</head>
+<body>
+{% if profiles %}
+    {% for profile in profiles %}
+    <a href="/{{profile[0]}}">{{profile[0]}}</a>
+    <textarea name="{{profile[0]}}" cols="50" rows="5">
+    {{profile[1]}}
+    </textarea>
+    <a href="/makedefault/{{profile[0]}}"><button type="button">Make {{profile[0]}} default profile</button></a>
+    {% endfor %}
+{% else %}
+<p> No Profiles exist</p>
+{% endif %}
+
+</body>
+</html>

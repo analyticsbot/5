@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+a {
+    display: block;
+    height: 20px;
+    width: 10px;
+}
+</style>
+<title>All Profiles</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+  <a href="/"><button type="button" class="btn btn-warning">Home</button></a>
+    <h2 align="center">All Profiles</h2>
+
+{% if profiles %}
+    {% for profile in profiles %}
+    <div class="row">
+        <div class="col-md-2">
+            <a href="/profile/{{profile[0]}}"><button type="button" class="btn btn-success">{{profile[0]}}</button></a>
+        </div>
+         <div class="col-md-6">
+            <textarea  class="form-control" name="{{profile[0]}}" cols="50" rows="5">{{profile[1]}}</textarea>
+        </div>
+        <div class="col-md-4">
+            <a href="/makedefault/{{profile[0]}}"><button type="button" class="btn btn-info">Make {{profile[0]}} default profile</button></a>
+         </div>
+    </div>
+    {% endfor %}
+{% else %}
+<p> No Profiles exist</p>
+{% endif %}
+</div>
+</div>
+</body>
+</html>
